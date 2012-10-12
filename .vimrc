@@ -45,7 +45,7 @@ set shiftwidth=4
 " Enable auto indent and smart indent
 set autoindent smartindent
 " Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set lcs=tab:▸\ ,trail:·
 set list
 " Highlight searches
 set hlsearch
