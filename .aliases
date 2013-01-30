@@ -21,6 +21,7 @@ alias o="open"
 alias oo="open ."
 
 # Other commands
+alias gitk='gitk --all 2>/dev/null &'
 alias realpath='greadlink -f'
 
 # Detect which `ls` flavor is in use
