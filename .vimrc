@@ -1,3 +1,15 @@
+set cinoptions=:2=2l1g2h2
+set nojoinspaces
+set spl=en_ca
+set textwidth=70
+set nowrap sidescroll=4 listchars+=precedes:<,extends:>
+
+" Don't use Ex mode, use Q for formatting
+map Q gq
+" Use c-n and c-p for next and previous file.
+nmap <c-n> :next<cr>
+nmap <c-p> :prev<cr>
+
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
@@ -56,6 +68,7 @@ set laststatus=2
 set mouse=a
 " Disable error bells
 set noerrorbells
+set visualbell
 " Don’t reset cursor to start of line when moving around.
 set nostartofline
 " Show the cursor position
