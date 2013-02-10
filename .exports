@@ -1,5 +1,6 @@
 # Make vim the default editor
 export EDITOR="vim"
+export HOMEBREW_EDITOR=gvim
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
