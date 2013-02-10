@@ -1,3 +1,9 @@
+# Do not overwrite files
+alias cp='cp -i'
+alias ln='ln -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
