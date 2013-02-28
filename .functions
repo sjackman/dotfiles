@@ -1,5 +1,5 @@
 # Simple calculator
-function calc() {
+function bccalc() {
 	local result=""
 	result="$(printf "scale=10;$*\n" | bc --mathlib | tr -d '\\\n')"
 	#                       └─ default (when `--mathlib` is used) is 20
