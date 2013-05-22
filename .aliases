@@ -1,3 +1,7 @@
+# GNU commands
+alias grep='/usr/local/bin/grep'
+alias wc='/usr/local/bin/gwc'
+
 # Do not overwrite files
 alias cp='cp -i'
 alias ln='ln -i'
@@ -28,6 +32,7 @@ alias oo="open ."
 
 # Other commands
 alias gitk='gitk --all 2>/dev/null &'
+alias gitx='open -a GitX .'
 alias realpath='greadlink -f'
 
 # Detect which `ls` flavor is in use
