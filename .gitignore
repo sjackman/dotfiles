@@ -18,3 +18,8 @@ _*
 
 # Backup files
 *-
+
+# R
+.Rdata
+.Rhistory
+Rplots.pdf
