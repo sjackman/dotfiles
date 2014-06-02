@@ -1,0 +1,4 @@
+# Remove duplicate elements
+unique() {
+	awk '!x[$0]++' "$@"
+}
