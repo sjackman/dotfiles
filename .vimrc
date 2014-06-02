@@ -24,6 +24,7 @@ set shiftwidth=4
 set tabstop=4
 
 " Colour
+syntax enable
 set background=dark
 colorscheme railscat
 
