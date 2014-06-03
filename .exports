@@ -1,0 +1,4 @@
+#!/bin/sh
+
+export EDITOR=gvim
+export GIT_EDITOR='gvim -f'
