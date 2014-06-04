@@ -1,0 +1,10 @@
+[alias]
+	ff = pull --ff-only
+	wdiff = diff --color-words
+[core]
+	excludesfile = ~/.gitignore
+[hub]
+	protocol = https
+[user]
+	name = Shaun Jackman
+	email = sjackman@gmail.com
