@@ -1,5 +1,2 @@
-# Shortcuts
+alias gitx='gitx --all'
 alias v='gview -'
-
-# Applications
-alias gitx='open -a GitX .'
