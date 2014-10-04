@@ -2,6 +2,9 @@
 alias grep='/usr/local/bin/grep'
 alias wc='/usr/local/bin/gwc'
 
+# z
+. `brew --prefix`/etc/profile.d/z.sh
+
 # Do not overwrite files
 alias cp='cp -i'
 alias ln='ln -i'
@@ -32,7 +35,7 @@ alias oo="open ."
 
 # Other commands
 alias gitk='gitk --all 2>/dev/null &'
-alias gitx='open -a GitX .'
+alias gitx='open -a GitX . --all'
 alias realpath='greadlink -f'
 
 # Detect which `ls` flavor is in use

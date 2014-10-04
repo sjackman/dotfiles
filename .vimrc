@@ -1,7 +1,6 @@
 set cinoptions=:2=2l1g2h2
 set nojoinspaces
 set spl=en_ca
-set textwidth=70
 set nowrap sidescroll=4 listchars+=precedes:<,extends:>
 
 " Don't use Ex mode, use Q for formatting

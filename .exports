@@ -1,3 +1,6 @@
+# Ruby
+export GEM_HOME=~/.gem
+
 # Make vim the default editor
 export EDITOR="vim"
 export HOMEBREW_EDITOR=gvim
@@ -18,3 +21,6 @@ export LESS_TERMCAP_md="$ORANGE"
 
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
+
+# Homebrew
+#export HOMEBREW_SOURCEFORGE_MIRROR="heanet"

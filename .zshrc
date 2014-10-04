@@ -40,14 +40,15 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew command-not-found git github gnu-utils osx)
+#plugins=(brew command-not-found git github gnu-utils osx zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 autoload -U select-word-style
 select-word-style shell
-export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
-source ~/.aliases
-source ~/.exports
+#export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
 source ~/.path
+source ~/.exports
+source ~/.aliases
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
