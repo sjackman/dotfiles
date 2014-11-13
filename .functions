@@ -5,3 +5,23 @@ unique()
 {
 	awk '!x[$0]++' "$@"
 }
+
+# Add Homebrew kegs to the PATH
+require()
+{
+	cellar=`brew --cellar`
+	for i; do
+		case $i in
+			*/*)
+				bin=$cellar/$i/bin
+				;;
+			*)
+                keg=`brew --prefix $i`
+				bin=`readlink -f $keg`/bin
+				;;
+		esac
+		if [ -r $bin ]; then
+			PATH=$bin:$PATH
+		fi
+	done
+}
