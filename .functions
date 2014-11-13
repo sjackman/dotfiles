@@ -1,4 +1,7 @@
+#!/bin/sh
+
 # Remove duplicate elements
-unique() {
+unique()
+{
 	awk '!x[$0]++' "$@"
 }
