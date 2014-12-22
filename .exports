@@ -6,3 +6,5 @@ export EMAIL='sjackman@gmail.com'
 export EDITOR='gvim'
 export VISUAL='gvim'
 export GIT_EDITOR='gvim -f'
+
+export DOCKER_HOST='tcp://127.0.0.1:2375'
