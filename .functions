@@ -1,5 +1,12 @@
 #!/bin/sh
 
+# Operate on the body of a file but not the header
+body() {
+	IFS= read -r header
+	printf '%s\n' "$header"
+	eval $@
+}
+
 # Remove duplicate elements
 unique()
 {
