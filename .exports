@@ -1,4 +1,8 @@
 #!/bin/sh
 
-export EDITOR=gvim
+export NAME='Shaun Jackman'
+export EMAIL='sjackman@gmail.com'
+
+export EDITOR='gvim'
+export VISUAL='gvim'
 export GIT_EDITOR='gvim -f'
