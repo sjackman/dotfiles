@@ -1,7 +1,13 @@
+" Behaviour
+set nojoinspaces
+
 " Colour
 syntax enable
 set background=dark
 colorscheme railscat
+
+" Display
+set showcmd
 
 " Indentation
 set autoindent
