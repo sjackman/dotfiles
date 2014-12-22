@@ -3,8 +3,17 @@
 	wdiff = diff --color-words
 [core]
 	excludesfile = ~/.gitignore
+[credential]
+	# For Mac OS
+	helper = osxkeychain
+	# For Linux
+	#helper = cache --timeout=100000000
 [hub]
 	protocol = https
 [user]
 	name = Shaun Jackman
 	email = sjackman@gmail.com
+[push]
+	default = simple
+[color]
+	ui = true
