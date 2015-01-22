@@ -7,6 +7,13 @@ body() {
 	eval $@
 }
 
+# Remove unused docker containers and images
+docker-cleanup()
+{
+	docker rm `docker ps -aq`
+	docker rmi `docker images --filter dangling=true --quiet`
+}
+
 # Remove duplicate elements
 unique()
 {
