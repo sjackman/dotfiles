@@ -1,13 +1,17 @@
 [alias]
 	ff = pull --ff-only
-	wdiff = diff --color-words
+	wdiff = diff --word-diff=plain
+	wdiffc = diff --word-diff=color
 [core]
 	excludesfile = ~/.gitignore
+	attributesfile = ~/.gitattributes
 [credential]
 	# For Mac OS
 	helper = osxkeychain
 	# For Linux
 	#helper = cache --timeout=100000000
+[diff "pandoc"]
+	textconv = pandoc --to=markdown --no-wrap
 [hub]
 	protocol = https
 [user]
