@@ -54,3 +54,9 @@ dplyr()
 	-e 'write.table(output, sep = "\\t", quote = FALSE, row.names = FALSE)' \
 	"$@"
 }
+
+# Convert a DOI to bibtex
+doi-bibtex()
+{
+	curl -LH "Accept: text/bibliography; style=bibtex" "http://dx.doi.org/$1"
+}
