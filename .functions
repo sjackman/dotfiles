@@ -39,3 +39,18 @@ require()
 		fi
 	done
 }
+
+# Wrangle data with dplyr and tidyr
+dplyr()
+{
+	Rscript \
+	-e 'library(dplyr, warn.conflicts = FALSE)' \
+	-e 'library(tidyr, warn.conflicts = FALSE)' \
+	-e 'args <- commandArgs(trailingOnly = TRUE)' \
+	-e 'f <- args[1]' \
+	-e 'args <- as.list(args[-1])' \
+	-e 'data <- read.delim(file("stdin"))' \
+	-e 'output <- do.call(f, c(list(data), args))' \
+	-e 'write.table(output, sep = "\\t", quote = FALSE, row.names = FALSE)' \
+	"$@"
+}
