@@ -33,6 +33,7 @@ set listchars=tab:▸\ ,trail:·
 " Wrap
 set colorcolumn=80
 set nowrap
+set linebreak
 
 " Ruby
 autocmd BufNewFile,BufRead *.rb set et sw=2 ts=2
