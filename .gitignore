@@ -1,5 +1,6 @@
 .*.swp
 .DS_Store
+.Rhistory
 ._*
 .nfs.*
 .sw?
