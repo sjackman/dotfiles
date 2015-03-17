@@ -41,6 +41,7 @@ require()
 }
 
 # Wrangle data with dplyr and tidyr
+# This prototype does not work well. I often use datamash.
 dplyr()
 {
 	Rscript \
