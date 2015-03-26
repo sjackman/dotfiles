@@ -2,6 +2,7 @@
 	ff = pull --ff-only
 	wdiff = diff --word-diff=plain
 	wdiffc = diff --word-diff=color
+	wdiffcsv = diff --word-diff=color --word-diff-regex=[^,]+
 	l = log -n10 --pretty=format:"%C(yellow)%h\\ %Creset%s\\ %Cblue[%cn]" --decorate
 	lb = log -n10 --pretty=format:"%C(yellow)%h\\ %Cred%d\\ %Creset%s\\ %Cblue[%cn]" --decorate
 [core]
