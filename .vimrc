@@ -35,5 +35,8 @@ set colorcolumn=80
 set nowrap
 set linebreak
 
+" Markdown
+autocmd BufNewFile,BufRead *.md set wrap nolist spell
+
 " Ruby
 autocmd BufNewFile,BufRead *.rb set et sw=2 ts=2
