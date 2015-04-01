@@ -93,7 +93,7 @@ if main_syntax ==# 'markdown'
 endif
 
 syn match markdownEscape "\\[][\\`*_{}()#+.!-]"
-syn match markdownError "\w\@<=_\w\@="
+syn match markdownError "\w\@<=\w\@="
 
 hi def link markdownH1                    htmlH1
 hi def link markdownH2                    htmlH2
