@@ -68,3 +68,11 @@ doi-bibtex()
 {
 	curl -LH "Accept: text/bibliography; style=bibtex" "http://dx.doi.org/$1"
 }
+
+# Daff a TSV/CSV file and open it in a browser
+daff-render()
+{
+	daff $1 $2 >! $1-$2
+	daff render --output $1-$2.html $1-$2
+	open $1-$2.html
+}
