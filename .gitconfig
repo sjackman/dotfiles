@@ -29,3 +29,13 @@
 	clean = git media clean %f
 	smudge = git media smudge %f
 	required = true
+[diff "daff-csv"]
+	command = daff diff --color --git
+[merge "daff-csv"]
+	name = daff tabular merge
+	driver = daff merge --output %A %O %A %B
+[diff "daff-tsv"]
+	command = daff diff --color --git
+[merge "daff-tsv"]
+	name = daff tabular tsv merge
+	driver = daff merge --output %A %O %A %B
