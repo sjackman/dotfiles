@@ -38,7 +38,7 @@ require()
 				;;
 			*)
                 keg=`brew --prefix $i`
-				bin=`readlink -f $keg`/bin
+				bin=`realpath $keg`/bin
 				;;
 		esac
 		if [ -r $bin ]; then
