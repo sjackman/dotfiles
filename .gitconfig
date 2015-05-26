@@ -6,6 +6,7 @@
 	l = log -n10 --pretty=format:"%C(yellow)%h\\ %Creset%s\\ %Cblue[%cn]" --decorate
 	lb = log -n10 --pretty=format:"%C(yellow)%h\\ %Cred%d\\ %Creset%s\\ %Cblue[%cn]" --decorate
 	s = status -uno
+	show-tsv = show --ext-diff
 [core]
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
