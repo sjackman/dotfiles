@@ -31,9 +31,10 @@ set list
 set listchars=tab:▸\ ,trail:·
 
 " Wrap
+set breakat-=@
 set colorcolumn=80
-set nowrap
 set linebreak
+set nowrap
 
 " Markdown
 autocmd BufNewFile,BufRead *.md set wrap nolist spell
