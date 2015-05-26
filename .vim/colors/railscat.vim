@@ -117,6 +117,7 @@ hi DiffDelete                guifg=#E6E1DC guibg=#660000
 hi link htmlTag              xmlTag
 hi link htmlTagName          xmlTagName
 hi link htmlEndTag           xmlEndTag
+hi!link Conceal              Special
 
 hi xmlTag                    guifg=#E8BF6A
 hi xmlTagName                guifg=#E8BF6A
