@@ -44,3 +44,6 @@ autocmd BufNewFile,BufRead *.rb set et sw=2 ts=2
 
 " Enable pathogen package manager
 execute pathogen#infect()
+
+" vim-pandoc plugin
+let g:pandoc#modules#disabled = ["folding"]
