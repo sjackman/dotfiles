@@ -1,3 +1,5 @@
 alias gitup='open -a GitUp'
 alias gitx='gitx --all'
+alias ql='qlmanage -p >/dev/null'
+alias today='date +%Y-%m-%d'
 alias v='gview -'
