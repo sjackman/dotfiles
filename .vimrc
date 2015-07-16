@@ -7,6 +7,7 @@ set background=dark
 colorscheme railscat
 
 " Display
+set ruler
 set showcmd
 
 " Indentation
