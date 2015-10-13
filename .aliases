@@ -1,3 +1,4 @@
+alias dockviz='docker run --rm -v /var/run/docker.sock:/var/run/docker.sock nate/dockviz'
 alias gitx='gitx --all'
 alias ql='qlmanage -p >/dev/null'
 alias today='date +%Y-%m-%d'
