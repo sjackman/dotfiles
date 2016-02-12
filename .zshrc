@@ -5,5 +5,6 @@ fi
 
 # Customize to your needs...
 . ./.exports
+. ./.extra
 . ./.aliases
 . ./.functions
