@@ -76,3 +76,19 @@ daff-render()
 	daff render --output $1-$2.html $1-$2
 	open $1-$2.html
 }
+
+# Create a Bintray package for Linuxbrew
+linuxbrew-create-package()
+{
+	curl -u$BINTRAY_USER:$BINTRAY_KEY \
+		-H 'Content-Type: application/json' \
+		-d '{"name":"'$2'", "licenses":["BSD 2-Clause"], "vcs_url":"https://github.com/Linuxbrew/linuxbrew.git"}' \
+		"https://api.bintray.com/packages/linuxbrew/$1"
+}
+
+# Upload a file to Bintray for Linuxbrew
+linuxbrew-upload()
+{
+	curl -u$BINTRAY_USER:$BINTRAY_KEY \
+		-T $4 "https://api.bintray.com/content/linuxbrew/$1/$2/$3/$4?publish=1"
+}
