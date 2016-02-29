@@ -82,7 +82,7 @@ linuxbrew-create-package()
 {
 	curl -u$BINTRAY_USER:$BINTRAY_KEY \
 		-H 'Content-Type: application/json' \
-		-d '{"name":"'$2'", "licenses":["BSD 2-Clause"], "vcs_url":"https://github.com/Linuxbrew/linuxbrew.git"}' \
+		-d '{"name":"'$2'", "licenses":["BSD 2-Clause"], "vcs_url":"https://github.com/Linuxbrew/linuxbrew.git", "public_download_numbers":true}' \
 		"https://api.bintray.com/packages/linuxbrew/$1"
 }
 
