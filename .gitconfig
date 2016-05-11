@@ -1,4 +1,5 @@
 [alias]
+	conflicts = diff --name-only --diff-filter=U
 	ff = pull --ff-only
 	wdiff = diff --word-diff=plain
 	wdiffc = diff --word-diff=color
