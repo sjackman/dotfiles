@@ -43,6 +43,9 @@ autocmd BufNewFile,BufRead *.md set wrap nolist spell
 " Ruby
 autocmd BufNewFile,BufRead *.rb set et sw=2 ts=2
 
+" TSV
+autocmd BufNewFile,BufRead *.tsv set ts=8
+
 " Enable pathogen package manager
 execute pathogen#infect()
 
