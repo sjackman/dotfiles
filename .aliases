@@ -4,3 +4,7 @@ alias ql='qlmanage -p >/dev/null'
 alias linuxbrew=~/.linuxbrew/bin/brew
 alias today='date +%Y-%m-%d'
 alias v='gview -'
+
+# Remove git aliases that conflict with other commands
+unalias gc
+unalias gdu
