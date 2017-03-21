@@ -8,6 +8,7 @@
 	la = log -n10 --pretty=format:"%C(auto,yellow)%h\\ %C(auto,reset)%s\\ %C(auto,blue)%cn"
 	lb = log -n10 --oneline --decorate=short
 	s = status -uno
+	u = status -u
 	show-tsv = show --ext-diff
 [core]
 	excludesfile = ~/.gitignore
