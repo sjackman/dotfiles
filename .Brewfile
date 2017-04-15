@@ -1,3 +1,4 @@
+brew 'hub'
 brew 'z'
 cask 'caffeine'
 cask 'dropbox'
