@@ -1,5 +1,8 @@
+brew 'calc'
 brew 'hub'
 brew 'z'
+tap 'homebrew/science'
+brew 'r'
 cask 'caffeine'
 cask 'dropbox'
 cask 'flux'
