@@ -1,4 +1,7 @@
 brew 'calc'
+brew 'coreutils'
+brew 'gawk'
+brew 'gnu-sed'
 brew 'hub'
 brew 'z'
 tap 'homebrew/science'
