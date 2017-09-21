@@ -7,11 +7,17 @@ body() {
 	eval $@
 }
 
+# Remove unused docker images
+docker-cleanup-images()
+{
+	docker rmi `docker images --filter dangling=true --quiet`
+}
+
 # Remove unused docker containers and images
 docker-cleanup()
 {
 	docker rm `docker ps -aq`
-	docker rmi `docker images --filter dangling=true --quiet`
+	docker-cleanup-images
 }
 
 # Move the specified files to a newly-created directory
@@ -64,9 +70,15 @@ dplyr()
 }
 
 # Convert a DOI to bibtex
-doi-bibtex()
+doi()
 {
-	curl -LH "Accept: text/bibliography; style=bibtex" "http://dx.doi.org/$1"
+	curl -LH "Accept: text/bibliography; style=bibtex" "http://dx.doi.org/$1" | sed 's/^ *//'
+}
+
+# Add a DOI to bibtex
+doi-add()
+{
+	(cat "$1"; doi "$2") | sort -u -o "$1"
 }
 
 # Daff a TSV/CSV file and open it in a browser
@@ -91,4 +103,21 @@ linuxbrew-upload()
 {
 	curl -u$BINTRAY_USER:$BINTRAY_KEY \
 		-T $4 "https://api.bintray.com/content/linuxbrew/$1/$2/$3/$4?publish=1"
+}
+
+# git: Add a file
+git-add()
+{
+	for i; do
+		git add "$i"
+		git commit "$i" -m "Add $i"
+	done
+}
+
+# git: Fixup a file
+git-fixup()
+{
+	for i; do
+		git commit "$i" -m "fixup $i"
+	done
 }
