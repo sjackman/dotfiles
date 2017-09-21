@@ -7,6 +7,7 @@
 	l = log -n10 --oneline
 	la = log -n10 --pretty=format:"%C(auto,yellow)%h\\ %C(auto,reset)%s\\ %C(auto,blue)%cn"
 	lb = log -n10 --oneline --decorate=short
+	ld = log -n10 --pretty=format:"%cd\\ %C(auto,yellow)%h\\ %C(auto,reset)%s" --date=short-local
 	lg = log -n10 --oneline --decorate=short --graph
 	s = status -uno
 	u = status -u
