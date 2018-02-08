@@ -8,3 +8,4 @@ alias ql='qlmanage -p >/dev/null'
 alias linuxbrew=~/.linuxbrew/bin/brew
 alias today='date +%Y-%m-%d'
 alias v='gview -'
+alias brewsci-pull='HOMEBREW_BOTTLE_DOMAIN=https://linuxbrew.bintray.com brew pull --bottle --bintray-org=linuxbrew --test-bot-user=LinuxbrewTestBot'
