@@ -69,16 +69,24 @@ dplyr()
 	"$@"
 }
 
-# Convert a DOI to bibtex
-doi()
+# Convert a DOI to a text citation.
+cite()
+{
+	for i do; curl -LH "Accept: text/bibliography" "http://doi.org/$i"; done
+}
+
+# Convert a DOI to bibtex.
+bib()
 {
 	for i do; curl -LH "Accept: text/bibliography; style=bibtex" "http://doi.org/$i" | sed 's/^ *//'; done
 }
 
-# Add a DOI to bibtex
-doi-add()
+# Add a DOI to bibtex.
+bib-add()
 {
-	(cat "$1"; doi "$2") | sort -u -o "$1"
+	bibfile = $1
+	shift
+	(cat "$bibfile"; bib "$@") | sort -u -o "$bibfile"
 }
 
 # Daff a TSV/CSV file and open it in a browser
