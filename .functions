@@ -72,7 +72,7 @@ dplyr()
 # Convert a DOI to bibtex
 doi()
 {
-	curl -LH "Accept: text/bibliography; style=bibtex" "http://dx.doi.org/$1" | sed 's/^ *//'
+	for i do; curl -LH "Accept: text/bibliography; style=bibtex" "http://doi.org/$i" | sed 's/^ *//'; done
 }
 
 # Add a DOI to bibtex
