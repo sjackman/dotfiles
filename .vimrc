@@ -40,6 +40,12 @@ set nowrap
 " Markdown
 autocmd BufNewFile,BufRead *.md set wrap nolist spell
 
+" Nextflow
+autocmd BufNewFile,BufRead *.nf set et syn=groovy
+
+" Python
+autocmd BufNewFile,BufRead *.py set et
+
 " Ruby
 autocmd BufNewFile,BufRead *.rb set et sw=2 ts=2
 
