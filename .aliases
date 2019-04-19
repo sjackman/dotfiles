@@ -5,7 +5,10 @@ alias amend='git commit --amend'
 alias dockviz='docker run --rm -v /var/run/docker.sock:/var/run/docker.sock nate/dockviz'
 alias gitx='gitx --all'
 alias ql='qlmanage -p >/dev/null'
-alias linuxbrew=~/.linuxbrew/bin/brew
 alias today='date +%Y-%m-%d'
 alias v='gview -'
+
+# Homebrew
+alias linuxbrew=~/.linuxbrew/bin/brew
 alias brewsci-pull='HOMEBREW_BOTTLE_DOMAIN=https://linuxbrew.bintray.com brew pull --bottle --bintray-org=linuxbrew --test-bot-user=LinuxbrewTestBot'
+alias linuxbrew-pull='HOMEBREW_BOTTLE_DOMAIN=https://linuxbrew.bintray.com linuxbrew pull --bottle --bintray-org=linuxbrew --test-bot-user=LinuxbrewTestBot'
