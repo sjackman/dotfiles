@@ -33,7 +33,7 @@ set listchars=tab:▸\ ,trail:·
 
 " Wrap
 set breakat-=@
-set colorcolumn=80
+set colorcolumn=100
 set linebreak
 set nowrap
 
