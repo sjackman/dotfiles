@@ -89,6 +89,20 @@ bib-add()
 	(cat "$bibfile"; bib "$@") | sort -u -o "$bibfile"
 }
 
+# Add a DOI to references.
+add-doi()
+{
+	doifile=$1
+	bibfile=$1.bib
+	shift
+	for i; do
+		echo "$i" >>$doifile
+		brew cite "$i" >>$bibfile
+	done
+	sort -u $doifile -o $doifile
+	sort -u $bibfile -o $bibfile
+}
+
 # Convert arXiv to bibtex.
 arxiv()
 {
