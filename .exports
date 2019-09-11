@@ -3,9 +3,9 @@
 export NAME='Shaun Jackman'
 export EMAIL='sjackman@gmail.com'
 
-export EDITOR='gvim'
-export VISUAL='gvim'
-export GIT_EDITOR='gvim -f'
+export EDITOR='code'
+export VISUAL='code'
+export GIT_EDITOR='code -w'
 
 # Homebrew
 export HOMEBREW_DEVELOPER=1
