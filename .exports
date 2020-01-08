@@ -3,9 +3,15 @@
 export NAME='Shaun Jackman'
 export EMAIL='sjackman@gmail.com'
 
-export EDITOR='code'
-export VISUAL='code'
-export GIT_EDITOR='code -w'
+if command -v code >/dev/null; then
+    export EDITOR='code'
+    export VISUAL='code'
+    export GIT_EDITOR='code -w'
+else
+    export EDITOR='vim'
+    export VISUAL='vim'
+    export GIT_EDITOR='vim -f'
+fi
 
 # Homebrew
 export HOMEBREW_DEVELOPER=1
