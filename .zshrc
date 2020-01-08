@@ -16,6 +16,7 @@ if [[ -r `brew --prefix`/etc/profile.d/z.sh ]]; then
 	. `brew --prefix`/etc/profile.d/z.sh
 fi
 
+PATH="$HOME/.cargo/bin:$PATH"
 PATH="$HOME/bin:$PATH"
 . ~/.exports
 . ~/.extra
