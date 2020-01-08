@@ -72,13 +72,13 @@ dplyr()
 # Convert a DOI to a text citation.
 cite()
 {
-	for i do; curl -LH "Accept: text/bibliography" "http://doi.org/$i"; done
+	for i; do curl -LH "Accept: text/bibliography" "http://doi.org/$i"; done
 }
 
 # Convert a DOI to bibtex.
 bib()
 {
-	for i do; curl -sLH "Accept: text/bibliography; style=bibtex" "http://doi.org/$i" | sed 's/^ *//'; done
+	for i; do curl -sLH "Accept: text/bibliography; style=bibtex" "http://doi.org/$i" | sed 's/^ *//'; done
 }
 
 # Add a DOI to bibtex.
@@ -106,7 +106,7 @@ add-doi()
 # Convert arXiv to bibtex.
 arxiv()
 {
-	for i do; curl -s "https://arxiv2bibtex.org/?outputformat=raw&q=$i" | paste -sd' ' - | sed 's/}, }/}}/'; done
+	for i; do curl -s "https://arxiv2bibtex.org/?outputformat=raw&q=$i" | paste -sd' ' - | sed 's/}, }/}}/'; done
 }
 
 # Daff a TSV/CSV file and open it in a browser
