@@ -43,3 +43,5 @@
 [merge "daff-tsv"]
 	name = daff tabular tsv merge
 	driver = daff merge --output %A %O %A %B
+[commit]
+	cleanup = strip
