@@ -21,6 +21,8 @@
 	helper = osxkeychain
 	# For Linux
 	#helper = cache --timeout=100000000
+[diff "mro"]
+	xfuncname = "^ *((pipeline|stage|call|struct) +[a-zA-Z0-9_]+( +as +[a-zA-Z0-9_]+)? *\\()$"
 [diff "pandoc"]
 	textconv = pandoc --to=markdown --no-wrap
 [hub]
