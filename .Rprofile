@@ -1,3 +1,4 @@
+options(pkgType = "binary")
 options(repos = c(CRAN = "https://cran.rstudio.com"))
 
 # Fix the error:
