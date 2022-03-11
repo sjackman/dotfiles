@@ -17,8 +17,9 @@
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
 [credential]
+	helper = !gh auth git-credential
 	# For Mac OS
-	helper = osxkeychain
+	#helper = osxkeychain
 	# For Linux
 	#helper = cache --timeout=100000000
 [diff "mro"]
