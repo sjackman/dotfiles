@@ -149,3 +149,9 @@ git-fixup()
 		git commit "$i" -m "fixup $i"
 	done
 }
+
+# Reverse complement nucleotide sequences.
+rc()
+{
+	awk '{print ">" NR "\n" $0}' | seqtk seq -r
+}
