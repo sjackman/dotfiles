@@ -16,6 +16,8 @@
 [core]
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
+[blame]
+	ignoreRevsFile = .git-blame-ignore-revs
 [credential]
 	helper = !gh auth git-credential
 	# For Mac OS
