@@ -1,3 +1,8 @@
+# Enable Homebrew.
+if [[ $(uname -s) = Linux ]] && ! command -v brew >/dev/null; then
+    eval $(~/.linuxbrew/bin/brew shellenv)
+fi
+
 # Enable Starship.
 eval "$(starship init zsh)"
 
