@@ -1,10 +1,10 @@
-# Source Prezto.
-if [[ -r "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
+# Enable Starship.
+eval "$(starship init zsh)"
 
 # Customize zsh
-set -opipefail
+autoload -U select-word-style
+select-word-style bash
+set -o noclobber -o pipefail
 export REPORTTIME=1
 export TIMEFMT='%J  %U user %S system %P cpu %*E total %M MB'
 
@@ -25,8 +25,8 @@ bindkey "^Y" yank
 bindkey "^[." insert-last-word
 bindkey "^[^?" backward-kill-word
 bindkey "^[^H" backward-kill-word
-bindkey "^[b" emacs-backward-word
-bindkey "^[f" emacs-forward-word
+bindkey "^[b" backward-word
+bindkey "^[f" forward-word
 set +o vi
 
 # Customize to your needs...
