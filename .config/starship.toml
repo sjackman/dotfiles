@@ -1,0 +1,29 @@
+# See https://starship.rs/config/
+
+[git_branch]
+symbol = ""
+
+[git_status]
+style = "bold blue"
+untracked = ""
+
+[aws]
+disabled = true
+
+[golang]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[package]
+disabled = true
+
+[python]
+disabled = true
+
+[rlang]
+disabled = true
+
+[rust]
+disabled = true
