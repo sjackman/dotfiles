@@ -7,9 +7,10 @@ fi
 eval "$(starship init zsh)"
 
 # Customize zsh
+setopt hist_ignore_all_dups hist_ignore_space noclobber pipefail share_history
 autoload -U select-word-style
 select-word-style bash
-set -o noclobber -o pipefail
+export HISTFILE=~/.zhistory
 export REPORTTIME=1
 export TIMEFMT='%J  %U user %S system %P cpu %*E total %M MB'
 
