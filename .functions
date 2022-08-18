@@ -153,5 +153,5 @@ git-fixup()
 # Reverse complement nucleotide sequences.
 rc()
 {
-	awk '{print ">" NR "\n" $0}' | seqtk seq -r
+	awk '{print ">" NR "\n" $0}' | seqtk seq -r | grep -v '^>'
 }
