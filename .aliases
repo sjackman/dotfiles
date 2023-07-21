@@ -1,6 +1,8 @@
 # Remove git aliases that conflict with other commands
 unalias gc gdu gwc 2>/dev/null || true
 
+alias c='cargo check --all-targets'
+alias f='git fetch --prune && git pull --ff-only'
 alias ls='gls --color=auto'
 alias today='date +%Y-%m-%d'
 alias v='gview -'
