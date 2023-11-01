@@ -1,4 +1,7 @@
+brew "black"
+brew "buildifier"
 brew "calc"
+brew "clang-format"
 brew "coreutils"
 brew "gawk"
 brew "gh"
@@ -9,7 +12,10 @@ brew "jq"
 brew "mas"
 brew "miller"
 brew "pandoc"
+brew "pre-commit"
+brew "ripgrep"
 brew "rsync"
+brew "ruff"
 brew "starship"
 brew "teleport"
 brew "z"
@@ -27,4 +33,3 @@ mas "1Password", id: 443987910
 mas "Amphetamine", id: 937984704
 mas "Slack", id: 803453959
 mas "Spark", id: 1176895641
-mas "Tweetbot", id: 1384080005
