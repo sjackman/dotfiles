@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# Convert to lowercase.
+lc() { tr A-Z a-z }
+
+# Convert to uppercase.
+uc() { tr a-z A-Z }
+
 # Operate on the body of a file but not the header
 body() {
 	IFS= read -r header
