@@ -11,6 +11,8 @@ setopt hist_ignore_all_dups hist_ignore_space noclobber pipefail share_history
 autoload -U select-word-style
 select-word-style bash
 export HISTFILE=~/.zhistory
+export HISTSIZE=10000
+export SAVEHIST=10000
 export REPORTTIME=1
 export TIMEFMT='%J  %U user %S system %P cpu %*E total %M MB'
 
