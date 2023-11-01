@@ -2,17 +2,15 @@
 	conflicts = diff --name-only --diff-filter=U
 	f = fetch --all --prune
 	ff = pull --ff-only --prune
-	l = log -n10 --oneline
-	la = log -n10 --pretty=format:"%C(auto,yellow)%h\\ %C(auto,reset)%s\\ %C(auto,blue)%an"
-	lb = log -n10 --oneline --decorate=short
-	ld = log -n10 --pretty=format:"%cd\\ %C(auto,yellow)%h\\ %C(auto,reset)%s" --date=short-local
-	lg = log -n10 --oneline --decorate=short --graph
+	l = log -n10 --pretty=format:"%C(auto)%cs\\ %h\\ %<(50,mtrunc)%s\\ %<(7,trunc)%an%+D"
+	ll = log -n10 --pretty=format:"%C(auto)%cs\\ %h\\ %s\\ %an\\ %D"
+	lg = log -n10 --oneline --decorate --graph
+	ls = ls-files
 	s = status -uno
-	show-tsv = show --ext-diff
 	u = status -u
-	wdiff = diff --word-diff=plain
-	wdiffc = diff --word-diff=color
-	wdiffcsv = diff --word-diff=color --word-diff-regex=[^,]+
+	wdiff = diff --word-diff
+	wdiffcsv = diff --word-diff --word-diff-regex=[^,]+
+	show-tsv = show --ext-diff
 [core]
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
