@@ -51,3 +51,10 @@
 	cleanup = strip
 [diff "mro"]
 	xfuncname = "^ *((pipeline|stage|call|struct) +[a-zA-Z0-9_]+( +as +[a-zA-Z0-9_]+)? *\\()$"
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
