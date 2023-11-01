@@ -1,5 +1,5 @@
 " Behaviour
-set nojoinspaces
+set expandtab nojoinspaces
 
 " Colour
 syntax enable
@@ -37,17 +37,17 @@ set colorcolumn=100
 set linebreak
 set nowrap
 
+" Makefile
+autocmd BufNewFile,BufRead Makefile set noexpandtab
+
 " Markdown
 autocmd BufNewFile,BufRead *.md set wrap nolist spell
 
 " Nextflow
-autocmd BufNewFile,BufRead *.nf set et syn=groovy
-
-" Python
-autocmd BufNewFile,BufRead *.py set et
+autocmd BufNewFile,BufRead *.nf set syn=groovy
 
 " Ruby
-autocmd BufNewFile,BufRead *.rb set et sw=2 ts=2
+autocmd BufNewFile,BufRead *.rb set sw=2 ts=2
 
 " TSV
 autocmd BufNewFile,BufRead *.tsv set ts=8
