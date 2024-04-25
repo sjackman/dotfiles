@@ -3,7 +3,7 @@
 	f = fetch --all --prune
 	ff = pull --ff-only --prune
 	l = log -n10 --pretty=format:"%C(auto)%cs\\ %h\\ %<(50,mtrunc)%s\\ %<(7,trunc)%an%+D"
-	ll = log -n10 --pretty=format:"%C(auto)%cs\\ %h\\ %s\\ %an\\ %D"
+	ll = log -n10 --pretty=format:"%C(auto)%cs\\ %h\\ %s\\ %C(yellow)%an%C(auto)\\ %D"
 	lg = log -n10 --oneline --decorate --graph
 	ls = ls-files
 	s = status -uno
@@ -14,8 +14,6 @@
 [core]
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
-[blame]
-	ignoreRevsFile = .git-blame-ignore-revs
 [credential]
 	helper = !gh auth git-credential
 	# For Mac OS
