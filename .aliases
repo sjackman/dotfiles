@@ -1,6 +1,13 @@
 # Remove git aliases that conflict with other commands
 unalias gc gdu gwc 2>/dev/null || true
 
+# Replace BSD commands with GNU commands on macOS.
+if [[ $HOME == /Users/* ]]; then
+    alias grep=ggrep
+    alias sed=gsed
+    alias wc=gwc
+fi
+
 alias c='cargo check --all-targets'
 alias f='git fetch --prune && git pull --ff-only'
 alias l='git l'
