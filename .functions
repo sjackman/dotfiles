@@ -13,6 +13,12 @@ body() {
 	eval $@
 }
 
+# Sort rust use statements.
+cargo-fmt-sort-use()
+{
+	cargo fmt -- --config=group_imports=One,imports_granularity=Module "$@"
+}
+
 # Remove unused docker images
 docker-cleanup-images()
 {
