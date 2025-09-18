@@ -1,4 +1,5 @@
 [alias]
+	amend = commit --amend --no-edit
 	conflicts = diff --name-only --diff-filter=U
 	f = fetch --all --prune
 	ff = pull --ff-only --prune
