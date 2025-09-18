@@ -38,9 +38,6 @@ bindkey "^[f" forward-word
 set +o vi
 
 # Customize to your needs...
-if which thefuck &>/dev/null; then
-	eval $(thefuck --alias)
-fi
 if [[ -r $(brew --prefix)/etc/profile.d/z.sh ]]; then
 	. $(brew --prefix)/etc/profile.d/z.sh
 fi
